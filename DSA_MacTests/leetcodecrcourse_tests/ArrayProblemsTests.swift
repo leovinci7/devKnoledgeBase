@@ -34,6 +34,24 @@ final class ArrayProblemsTests: XCTestCase {
         
         
     }
+    
+    func test_isSubSquence(){
+        
+       let sut = ArrayProblems()
+        
+        let patternArray = ["llo", "world", "dd"]
+        let patternCompareResult = [true, true, false]
+        var patternReceivedResult = [Bool]()
+    
+        for (_, pattern) in patternArray.enumerated(){
+            patternReceivedResult.append(sut.isSubSquence(str: "helloworld", pattern: pattern))
+        }
+       print(patternReceivedResult)
+        XCTAssertEqual(patternCompareResult, patternReceivedResult)
+        
+        
+    }
+    
 }
 
    

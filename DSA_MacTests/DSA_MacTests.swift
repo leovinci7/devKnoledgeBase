@@ -25,7 +25,7 @@ final class DSA_MacTests: XCTestCase {
         var inputNodes = [Node]()
         
         let firstNode = Node(value: "0")
-        var myLinkedList = LinkedList(node: firstNode)
+        let myLinkedList = LinkedList(node: firstNode)
         
         inputNodes.append(firstNode)
         
