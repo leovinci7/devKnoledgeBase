@@ -17,6 +17,36 @@ final class DSA_MacTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    
+    func test_LinkedList_AppendOperation() {
+        
+        let valuesForNode = ["1", "3" , "5", "7"]
+        var inputNodes = [Node]()
+        
+        let firstNode = Node(value: "0")
+        var myLinkedList = LinkedList(node: firstNode)
+        
+        inputNodes.append(firstNode)
+        
+        for (_, element) in valuesForNode.enumerated() {
+            let node = Node(value: element)
+            inputNodes.append(node)
+            myLinkedList.append(newNode: node)
+        }
+        
+        let receivedNodes = myLinkedList.getAllNodes()
+        
+        myLinkedList.printList()
+        //print(receivedNodes)
+        XCTAssertEqual(inputNodes, receivedNodes)
+        
+        
+    }
+    
+    
+    
+    
 
     func testExample() throws {
         // This is an example of a functional test case.
