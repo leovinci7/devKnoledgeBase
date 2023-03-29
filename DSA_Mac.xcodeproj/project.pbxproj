@@ -12,8 +12,6 @@
 		0510506D29898AA300009CE5 /* DSA_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 0510506129898AA300009CE5 /* DSA_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0510507829898B6D00009CE5 /* HashTableCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510507729898B6D00009CE5 /* HashTableCaseTest.swift */; };
 		0510507A29898B7B00009CE5 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510507929898B7B00009CE5 /* HashTable.swift */; };
-		0510507C298AD55B00009CE5 /* ArrayAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510507B298AD55B00009CE5 /* ArrayAlgorithms.swift */; };
-		0510507E298C1EEB00009CE5 /* ArrayAlgorithmsCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510507D298C1EEB00009CE5 /* ArrayAlgorithmsCaseTest.swift */; };
 		0510508029916D9A00009CE5 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510507F29916D9A00009CE5 /* LinkedList.swift */; };
 		05B8EBD229D3D2C9004AE290 /* RecursionProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8EBD129D3D2C9004AE290 /* RecursionProblems.swift */; };
 		05E1819C29C296BD0052F5E3 /* ArrayProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1819B29C296BD0052F5E3 /* ArrayProblems.swift */; };
@@ -37,8 +35,6 @@
 		0510506B29898AA300009CE5 /* DSA_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA_MacTests.swift; sourceTree = "<group>"; };
 		0510507729898B6D00009CE5 /* HashTableCaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HashTableCaseTest.swift; path = ../../../../Desktop/HashTableCaseTest.swift; sourceTree = "<group>"; };
 		0510507929898B7B00009CE5 /* HashTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HashTable.swift; path = ../../../../../Desktop/HashTable.swift; sourceTree = "<group>"; };
-		0510507B298AD55B00009CE5 /* ArrayAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayAlgorithms.swift; sourceTree = "<group>"; };
-		0510507D298C1EEB00009CE5 /* ArrayAlgorithmsCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayAlgorithmsCaseTest.swift; sourceTree = "<group>"; };
 		0510507F29916D9A00009CE5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		05B8EBD129D3D2C9004AE290 /* RecursionProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionProblems.swift; sourceTree = "<group>"; };
 		05E1819B29C296BD0052F5E3 /* ArrayProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayProblems.swift; sourceTree = "<group>"; };
@@ -97,7 +93,6 @@
 				05E1819A29C2965E0052F5E3 /* leetcodecrcourse_tests */,
 				0510506B29898AA300009CE5 /* DSA_MacTests.swift */,
 				0510507729898B6D00009CE5 /* HashTableCaseTest.swift */,
-				0510507D298C1EEB00009CE5 /* ArrayAlgorithmsCaseTest.swift */,
 			);
 			path = DSA_MacTests;
 			sourceTree = "<group>";
@@ -107,7 +102,6 @@
 			children = (
 				05E1819929C296130052F5E3 /* leetcodecrcourse */,
 				0510507929898B7B00009CE5 /* HashTable.swift */,
-				0510507B298AD55B00009CE5 /* ArrayAlgorithms.swift */,
 				0510507F29916D9A00009CE5 /* LinkedList.swift */,
 			);
 			path = Algorithms;
@@ -244,7 +238,6 @@
 				05E1819C29C296BD0052F5E3 /* ArrayProblems.swift in Sources */,
 				05B8EBD229D3D2C9004AE290 /* RecursionProblems.swift in Sources */,
 				0510507A29898B7B00009CE5 /* HashTable.swift in Sources */,
-				0510507C298AD55B00009CE5 /* ArrayAlgorithms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +247,6 @@
 			files = (
 				0510507829898B6D00009CE5 /* HashTableCaseTest.swift in Sources */,
 				05E1819E29C2976A0052F5E3 /* ArrayProblemsTests.swift in Sources */,
-				0510507E298C1EEB00009CE5 /* ArrayAlgorithmsCaseTest.swift in Sources */,
 				0510506C29898AA300009CE5 /* DSA_MacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
