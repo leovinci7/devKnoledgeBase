@@ -37,6 +37,7 @@
 		0510507929898B7B00009CE5 /* HashTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HashTable.swift; path = ../../../../../Desktop/HashTable.swift; sourceTree = "<group>"; };
 		0510507F29916D9A00009CE5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		05B8EBD129D3D2C9004AE290 /* RecursionProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionProblems.swift; sourceTree = "<group>"; };
+		05B8EBD329D40F2A004AE290 /* DSAPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DSAPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		05E1819B29C296BD0052F5E3 /* ArrayProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayProblems.swift; sourceTree = "<group>"; };
 		05E1819D29C2976A0052F5E3 /* ArrayProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayProblemsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +82,8 @@
 		0510506029898AA300009CE5 /* DSA_Mac */ = {
 			isa = PBXGroup;
 			children = (
+				05B8EBD429D40F3A004AE290 /* Playground */,
 				0510507629898B3100009CE5 /* Algorithms */,
-				0510506129898AA300009CE5 /* DSA_Mac.h */,
 			);
 			path = DSA_Mac;
 			sourceTree = "<group>";
@@ -105,6 +106,15 @@
 				0510507F29916D9A00009CE5 /* LinkedList.swift */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		05B8EBD429D40F3A004AE290 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				05B8EBD329D40F2A004AE290 /* DSAPlayground.playground */,
+				0510506129898AA300009CE5 /* DSA_Mac.h */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 		05E1819929C296130052F5E3 /* leetcodecrcourse */ = {
