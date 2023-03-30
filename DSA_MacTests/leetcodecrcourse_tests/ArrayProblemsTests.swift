@@ -35,7 +35,7 @@ final class ArrayProblemsTests: XCTestCase {
         
     }
     
-    func test_isSubSquence(){
+    func test_isSubSequence(){
         
        let sut = ArrayProblems()
         

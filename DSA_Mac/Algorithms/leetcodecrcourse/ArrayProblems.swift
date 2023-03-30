@@ -16,10 +16,8 @@ public class ArrayProblems{
     
     //MARK: Two Pointers problems
     
-    
     //Check if string is palindrom
     public func checkIfPalindrome (check s:String) -> Bool{
-        
         let str = Array(s)
         var left = 0
         var right = str.count-1
@@ -76,13 +74,54 @@ public class ArrayProblems{
                 i+=1
             }
         }
-        
         let isTrue = patternArray.count == j
         return isTrue
+    }
+    
+    //Write a function that reverses a string. The input string is given as an array of characters s.
+    func reverseString(_ s: inout [Character]) {
+        var left = 0
+        var right = s.count - 1
         
+        while left < right {
+            let temp = s[left]
+            s[left] = s[right]
+            s[right] = temp
+            
+            left += 1
+            right -= 1
+        }
+    }
+    
+//Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+/*
+Input: nums = [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+Explanation: After squaring, the array becomes [16,1,0,9,100].
+After sorting, it becomes [0,1,9,16,100].
+ */
+    
+    func sortedSquares(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+        var left = 0
+        var right = nums.count - 1
         
+        while left <= right {
+            let squareLeft = nums[left] * nums[left]
+            let squareRight = nums[right] * nums[right]
+            
+            if squareLeft > squareRight {
+                result.append(squareLeft)
+                left += 1
+            } else {
+                result.append(squareRight)
+                right -= 1
+            }
+        }
+        
+        return result.reversed()
     }
     
 
-    
+        
 }
