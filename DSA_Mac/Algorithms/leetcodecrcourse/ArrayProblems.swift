@@ -78,49 +78,91 @@ public class ArrayProblems{
         return isTrue
     }
     
+  
     //Write a function that reverses a string. The input string is given as an array of characters s.
-    func reverseString(_ s: inout [Character]) {
+    
+    func reverseString(string str:String) -> String {
+        
+        var strArray = Array(str)
         var left = 0
-        var right = s.count - 1
+        var right = str.count-1
         
         while left < right {
-            let temp = s[left]
-            s[left] = s[right]
-            s[right] = temp
+            let temp = strArray[left]
+            strArray[left] = strArray[right]
+            strArray[right] = temp
             
             left += 1
             right -= 1
         }
+        
+        
+        return String(strArray)
+        
     }
     
-//Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
-/*
-Input: nums = [-4,-1,0,3,10]
-Output: [0,1,9,16,100]
-Explanation: After squaring, the array becomes [16,1,0,9,100].
-After sorting, it becomes [0,1,9,16,100].
- */
     
-    func sortedSquares(_ nums: [Int]) -> [Int] {
-        var result = [Int]()
-        var left = 0
-        var right = nums.count - 1
+    //Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+    /*
+    Input: nums = [-4,-1,0,3,10]
+    Output: [0,1,9,16,100]
+    Explanation: After squaring, the array becomes [16,1,0,9,100].
+    After sorting, it becomes [0,1,9,16,100].
+     */
         
-        while left <= right {
-            let squareLeft = nums[left] * nums[left]
-            let squareRight = nums[right] * nums[right]
+        func sortedSquares(_ nums: [Int]) -> [Int] {
+            var result = [Int]()
+            var left = 0
+            var right = nums.count - 1
             
-            if squareLeft > squareRight {
-                result.append(squareLeft)
-                left += 1
-            } else {
-                result.append(squareRight)
-                right -= 1
+            while left <= right {
+                let squareLeft = nums[left] * nums[left]
+                let squareRight = nums[right] * nums[right]
+                
+                if squareLeft > squareRight {
+                    result.append(squareLeft)
+                    left += 1
+                } else {
+                    result.append(squareRight)
+                    right -= 1
+                }
             }
+            
+            return result.reversed()
+        }
+    
+    
+    //MARK: Sliding Window Problems
+    
+    // Example 1: Given an array of positive integers nums and an integer k, find the length of the longest subarray whose sum is less than or equal to k.
+    
+    public func findLength(passedArray nums:[Int], sumValue k:Int ) -> Int {
+        
+        var left = 0
+        var curr = 0
+        var ans = 0
+        
+        for right in 0..<nums.count {
+            curr = curr + nums[right]
+          
+            if(curr > k){
+                curr = curr - nums[left]
+                left += 1
+            }
+
+            ans = max(ans, right-left+1)
         }
         
-        return result.reversed()
+        
+        return ans
     }
+    
+    
+    //Example 2: You are given a binary substring s (a string containing only "0" and "1"). An operation involves flipping a "0" into a "1". What is the length of the longest substring containing only "1" after performing at most one operation? For example, given s = "1101100111", the answer is 5. If you perform the operation at index 2, the string becomes 1111100111.
+    
+    //Solution needed
+    
+    
     
 
         
