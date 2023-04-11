@@ -52,6 +52,36 @@ final class ArrayProblemsTests: XCTestCase {
         
     }
     
+    
+    //MARK: Sliding Window Problem Tests
+    
+    
+    func test_findLength(){
+        let sut = ArrayProblems()
+        struct testInputModel {
+            let nums: [Int]
+            let kSum:Int
+            let expectedResult:Int
+        }
+        var testInputs:[testInputModel] = []
+        //var expectedResult:[Int] = []
+        testInputs.append(testInputModel(nums: [3, 1, 2, 7, 4, 2, 1, 1, 5], kSum: 8, expectedResult: 4))
+        testInputs.append(testInputModel(nums: [1, 2, 3, 4, 5], kSum: 10, expectedResult: 4))
+        testInputs.append(testInputModel(nums: [1, 1, 1, 1, 1], kSum: 3, expectedResult: 3))
+        testInputs.append(testInputModel(nums: [2, 2, 2, 2], kSum: 3, expectedResult: 1))
+        testInputs.append(testInputModel(nums: [1, 2, 3, 4, 5], kSum: 5, expectedResult: 2))
+        testInputs.append(testInputModel(nums: [1, 2, 3, 4, 5], kSum: 15, expectedResult: 5))
+        
+        for input in testInputs {
+            
+            let result = sut.findLength(passedArray: input.nums, sumValue: input.kSum)
+            XCTAssertEqual(result, input.expectedResult, "For test array: \(input.nums)")
+        }
+        
+        
+        
+    }
+    
 }
 
    
