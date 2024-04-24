@@ -39,15 +39,15 @@ final class ArrayProblemsTests: XCTestCase {
         
        let sut = ArrayProblems()
         
-        let patternArray = ["llo", "world", "dd"]
-        let patternCompareResult = [true, true, false]
-        var patternReceivedResult = [Bool]()
+        let subSeqStrArr = ["llo", "world", "dd"]
+        let subSeqCamparisonResult = [true, true, false]
+        var subSeqRecievedResult = [Bool]()
     
-        for (_, pattern) in patternArray.enumerated(){
-            patternReceivedResult.append(sut.isSubSquence(str: "helloworld", pattern: pattern))
+        for (_, subSeq) in subSeqStrArr.enumerated(){
+            subSeqRecievedResult.append(sut.isSubSquence(originalStr: "helloworld", subSequenceStr: subSeq))
         }
-       print(patternReceivedResult)
-        XCTAssertEqual(patternCompareResult, patternReceivedResult)
+       print(subSeqRecievedResult)
+        XCTAssertEqual(subSeqCamparisonResult, subSeqRecievedResult)
         
         
     }

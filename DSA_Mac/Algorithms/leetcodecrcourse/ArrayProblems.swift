@@ -61,20 +61,20 @@ public class ArrayProblems{
     //Leetcode problem: 392
     //Given two strings s and t, return true if s is a subsequence of t, or false otherwise.A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
     
-    public func isSubSquence(str s:String, pattern t:String) -> Bool {
+    public func isSubSquence(originalStr t:String, subSequenceStr s:String) -> Bool {
         
-        let strArray = Array(s)
-        let patternArray = Array(t)
+        let subSeqStrArr = Array(s)
+        let originalStrArr = Array(t)
         
         var i=0, j = 0
-        while i < strArray.count && j < patternArray.count {
-            if(patternArray[j] == strArray[i]){
+        while i < subSeqStrArr.count && j < originalStrArr.count {
+            if(subSeqStrArr[i] == originalStrArr[j]){
                 j+=1; i+=1
             }else{
-                i+=1
+                j+=1
             }
         }
-        let isTrue = patternArray.count == j
+        let isTrue = subSeqStrArr.count == i
         return isTrue
     }
     
