@@ -1,14 +1,14 @@
 //
-//  DSA_MacTests.swift
+//  LinkedListTests.swift
 //  DSA_MacTests
 //
-//  Created by Medhad Ashraf Islam on 31/1/23.
+//  Created by Medhad Ashraf on 24/4/24.
 //
 
 import XCTest
 import DSA_Mac
 
-final class DSA_MacTests: XCTestCase {
+final class LinkedListTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -17,7 +17,6 @@ final class DSA_MacTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
     
     func test_LinkedList_AppendOperation() {
         
@@ -43,10 +42,6 @@ final class DSA_MacTests: XCTestCase {
         
         
     }
-    
-    
-    
-    
 
     func testExample() throws {
         // This is an example of a functional test case.
@@ -64,3 +59,4 @@ final class DSA_MacTests: XCTestCase {
     }
 
 }
+
