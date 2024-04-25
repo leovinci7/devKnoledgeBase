@@ -87,7 +87,7 @@
 		0510506A29898AA300009CE5 /* DSA_MacTests */ = {
 			isa = PBXGroup;
 			children = (
-				05E1819A29C2965E0052F5E3 /* leetcodecrcourse_tests */,
+				055E89812BD9D1BC00C6BDD0 /* Algorithms */,
 				0510506B29898AA300009CE5 /* DSA_MacTests.swift */,
 			);
 			path = DSA_MacTests;
@@ -98,6 +98,14 @@
 			children = (
 				05E1819929C296130052F5E3 /* leetcodecrcourse */,
 				0510507F29916D9A00009CE5 /* LinkedList.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		055E89812BD9D1BC00C6BDD0 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				05E1819A29C2965E0052F5E3 /* leetcodecrcourse_tests */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";

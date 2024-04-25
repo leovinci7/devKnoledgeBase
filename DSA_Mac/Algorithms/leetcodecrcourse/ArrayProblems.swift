@@ -119,7 +119,7 @@ public class ArrayProblems{
                 let squareLeft = nums[left] * nums[left]
                 let squareRight = nums[right] * nums[right]
                 
-                if squareLeft > squareRight {
+                if squareLeft < squareRight {
                     result.append(squareLeft)
                     left += 1
                 } else {
@@ -128,7 +128,7 @@ public class ArrayProblems{
                 }
             }
             
-            return result.reversed()
+            return result
         }
     
     
@@ -157,6 +157,33 @@ public class ArrayProblems{
         return ans
     }
     
+    //MARK: Prefix Sum
+    
+    /*
+     Concept: 
+     Prefix sum is a technique that can be used on arrays (of numbers). The idea is to create an array prefix where prefix[i] is the sum of all elements up to the index i (inclusive). For example, given nums = [5, 2, 1, 6, 3, 8], we would have prefix = [5, 7, 8, 14, 17, 25].
+     
+     A prefix sum is a great tool whenever a problem involves sums of a subarray. It only costs
+     O(n) to build but allows all future subarray queries to be
+     O(1), so it can usually improve an algorithm's time complexity by a factor of
+     O(n), where n is the length of the array.
+     
+    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //-----------------
     
     //Example 2: You are given a binary substring s (a string containing only "0" and "1"). An operation involves flipping a "0" into a "1". What is the length of the longest substring containing only "1" after performing at most one operation? For example, given s = "1101100111", the answer is 5. If you perform the operation at index 2, the string becomes 1111100111.
     

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import DSA_Mac
+import DSA_Mac
 
 final class DSA_MacTests: XCTestCase {
 

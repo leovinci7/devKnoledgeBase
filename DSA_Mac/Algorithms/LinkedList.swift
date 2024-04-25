@@ -7,39 +7,39 @@
 
 import Foundation
 
-class Node: Equatable {
-    static func == (lhs: Node, rhs: Node) -> Bool {
+public class Node: Equatable {
+    public static func == (lhs: Node, rhs: Node) -> Bool {
         return lhs === rhs
     }
     
     var value: String
     var next: Node?
 
-    init(value: String) {
+   public init(value: String) {
         self.value = value
     }
 }
 
-class LinkedList {
+public class LinkedList {
     private var head: Node?
     private var tail: Node?
     private var length: Int
 
-    init(value: String) {
+   public init(value: String) {
         let newNode = Node(value: value)
         head = newNode
         tail = newNode
         length = 1
     }
     
-    init(node: Node){
+   public init(node: Node){
         head = node
         tail = node
         length = 1
         
     }
 
-    func printList() {
+   public func printList() {
         var temp = head
         while temp != nil {
             print(temp!.value)
@@ -67,7 +67,7 @@ class LinkedList {
         print("Length: \(length)")
     }
     
-    func getAllNodes()-> [Node]{
+    public func getAllNodes()-> [Node]{
         var nodeArray = [Node]()
         var temp = head
         while(temp != nil){
@@ -81,7 +81,7 @@ class LinkedList {
     }
     
 
-    func append(value: String) {
+   public func append(value: String) {
         let newNode = Node(value: value)
         if length == 0 {
             head = newNode
@@ -93,7 +93,7 @@ class LinkedList {
         length += 1
     }
     
-    func append(newNode: Node) {
+   public func append(newNode: Node) {
 
         if length == 0 {
             head = newNode
